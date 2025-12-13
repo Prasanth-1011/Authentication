@@ -1,13 +1,12 @@
 :root {
     --mirage: #142D4C;
-    --san-marino: #385170;
     --sinbad: #9FD3C7;
     --gallery: #ECECEC;
+    --san-marino: #385170;
 }
 
 * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html,

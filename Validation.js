@@ -159,8 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.location.href = "./Dashboard.html";
                 }, 1500);
             }, 1500);
-            localStorage.setAttribute("userLogin", "true");
         }
     });
 
 });
+

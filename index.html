@@ -13,51 +13,7 @@
 
 <body class="flex flex-col bg-[var(--mirage)] text-[var(--gallery)] font-sans overflow-hidden">
     <main class="w-full h-full relative">
-        <section id="login" class="w-full h-full content-center pb-20">
-            <form class="flex flex-col gap-4 items-center justify-center overflow-y-auto">
-                <h1 class="text-3xl font-bold px-4 py-8 text-center text-[var(--gallery)]">Login</h1>
-
-                <span
-                    class="w-[20rem] p-2 border border-[var(--san-marino)] rounded bg-[var(--san-marino)] flex items-center gap-2 focus-within:ring-2 focus-within:ring-[var(--sinbad)] focus-within:border-transparent transition-all shadow-md">
-                    <input type="email" id="loginEmail" placeholder="Enter Mail"
-                        class="w-full text-sm md:text-base outline-none bg-transparent text-[var(--gallery)] placeholder-[var(--sinbad)]/70">
-                    <i class="bx bx-envelope text-[var(--sinbad)] text-md md:text-lg"></i>
-                </span>
-
-                <span
-                    class="w-[20rem] p-2 border border-[var(--san-marino)] rounded bg-[var(--san-marino)] flex items-center gap-2 focus-within:ring-2 focus-within:ring-[var(--sinbad)] focus-within:border-transparent transition-all shadow-md">
-                    <input type="password" id="loginPassword" placeholder="Enter Password"
-                        class="w-full text-sm md:text-base outline-none bg-transparent text-[var(--gallery)] placeholder-[var(--sinbad)]/70">
-                    <i class="bx bx-lock text-[var(--sinbad)] text-md md:text-lg"></i>
-                </span>
-                <p id="loginMessage" class="w-[20rem] text-sm text-center text-transparent px-3">Error</p>
-
-                <span class="mt-2">
-                    <input type="button" id="loginButton" value="Login" disabled
-                        class="px-6 py-2 opacity-50 bg-[var(--gallery)] text-[var(--mirage)] font-semibold rounded shadow-md hover:bg-[var(--sinbad)] hover:text-[var(--mirage)] hover:shadow-lg transition-all cursor-not-allowed border-none">
-                </span>
-            </form>
-
-        </section>
-
-        <section
-            class="w-full h-[50%] flex flex-col absolute -bottom-[25%] items-center justify-between pointer-events-none">
-            <div
-                class="w-full h-[50%] flex flex-col items-center justify-center bg-[var(--san-marino)] rounded-t-full shadow-2xl pointer-events-auto border-t border-[var(--sinbad)]/20">
-                <h1 class="text-xl font-bold p-4 text-center text-[var(--gallery)]">New User?</h1>
-                <a href="#register"><button
-                        class="px-6 py-2 border border-[var(--sinbad)] text-[var(--sinbad)] rounded hover:bg-[var(--sinbad)] hover:text-[var(--mirage)] hover:border-[var(--sinbad)] transition-colors cursor-pointer">Register</button></a>
-            </div>
-
-            <div
-                class="w-full h-[50%] flex flex-col items-center justify-center bg-[var(--gallery)] rounded-b-full shadow-2xl pointer-events-auto border-t border-[var(--san-marino)]">
-                <h1 class="text-xl font-bold p-4 text-center text-[var(--san-marino)]">Already User?</h1>
-                <a href="#login"><button
-                        class="px-6 py-2 border border-[var(--sinbad)] text-[var(--gallery)] bg-[var(--san-marino)] rounded hover:bg-[var(--sinbad)] hover:text-[var(--san-marino)] transition-colors cursor-pointer">Login</button></a>
-            </div>
-        </section>
-
-        <section id="register" class="w-full h-full content-center pt-20">
+        <section id="register" class="w-full h-full pt-20">
             <form class="flex flex-col items-center justify-center overflow-y-auto">
                 <h1 class="text-3xl font-bold px-4 py-8 text-center text-[var(--gallery)]">Register</h1>
                 <span
@@ -88,6 +44,49 @@
 
                 <span class="mt-2">
                     <input type="button" value="Register" id="registerButton" disabled
+                        class="px-6 py-2 opacity-50 bg-[var(--gallery)] text-[var(--mirage)] font-semibold rounded shadow-md hover:bg-[var(--sinbad)] hover:text-[var(--mirage)] hover:shadow-lg transition-all cursor-not-allowed border-none">
+                </span>
+            </form>
+        </section>
+
+        <section
+            class="w-full h-[50%] flex flex-col absolute -bottom-[25%] items-center justify-between pointer-events-none">
+            <div
+                class="w-full h-[50%] flex flex-col items-center justify-center bg-[var(--san-marino)] rounded-t-full shadow-2xl pointer-events-auto border-t border-[var(--sinbad)]/20">
+                <h1 class="text-xl font-bold p-4 text-center text-[var(--gallery)]">Already User?</h1>
+                <a href="#login"><button
+                        class="px-6 py-2 border border-[var(--sinbad)] text-[var(--sinbad)] rounded hover:bg-[var(--sinbad)] hover:text-[var(--mirage)] hover:border-[var(--sinbad)] transition-colors cursor-pointer">Login</button></a>
+            </div>
+
+            <div
+                class="w-full h-[50%] flex flex-col items-center justify-center bg-[var(--gallery)] rounded-b-full shadow-2xl pointer-events-auto border-t border-[var(--san-marino)]">
+                <h1 class="text-xl font-bold p-4 text-center text-[var(--san-marino)]">New User?</h1>
+                <a href="#register"><button
+                        class="px-6 py-2 border border-[var(--sinbad)] text-[var(--gallery)] bg-[var(--san-marino)] rounded hover:bg-[var(--sinbad)] hover:text-[var(--san-marino)] transition-colors cursor-pointer">Register</button></a>
+            </div>
+        </section>
+
+        <section id="login" class="w-full h-full content-end pb-40">
+            <form class="flex flex-col gap-4 items-center justify-center overflow-y-auto">
+                <h1 class="text-3xl font-bold px-4 py-8 text-center text-[var(--gallery)]">Login</h1>
+
+                <span
+                    class="w-[20rem] p-2 border border-[var(--san-marino)] rounded bg-[var(--san-marino)] flex items-center gap-2 focus-within:ring-2 focus-within:ring-[var(--sinbad)] focus-within:border-transparent transition-all shadow-md">
+                    <input type="email" id="loginEmail" placeholder="Enter Mail"
+                        class="w-full text-sm md:text-base outline-none bg-transparent text-[var(--gallery)] placeholder-[var(--sinbad)]/70">
+                    <i class="bx bx-envelope text-[var(--sinbad)] text-md md:text-lg"></i>
+                </span>
+
+                <span
+                    class="w-[20rem] p-2 border border-[var(--san-marino)] rounded bg-[var(--san-marino)] flex items-center gap-2 focus-within:ring-2 focus-within:ring-[var(--sinbad)] focus-within:border-transparent transition-all shadow-md">
+                    <input type="password" id="loginPassword" placeholder="Enter Password"
+                        class="w-full text-sm md:text-base outline-none bg-transparent text-[var(--gallery)] placeholder-[var(--sinbad)]/70">
+                    <i class="bx bx-lock text-[var(--sinbad)] text-md md:text-lg"></i>
+                </span>
+                <p id="loginMessage" class="w-[20rem] text-sm text-center text-transparent px-3">Error</p>
+
+                <span class="mt-2">
+                    <input type="button" id="loginButton" value="Login" disabled
                         class="px-6 py-2 opacity-50 bg-[var(--gallery)] text-[var(--mirage)] font-semibold rounded shadow-md hover:bg-[var(--sinbad)] hover:text-[var(--mirage)] hover:shadow-lg transition-all cursor-not-allowed border-none">
                 </span>
             </form>

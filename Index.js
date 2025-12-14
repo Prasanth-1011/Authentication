@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginLink = document.querySelector('a[href="#login"]');
     const registerLink = document.querySelector('a[href="#register"]');
 
+    // Navigation Function
     function navigateTo(target) {
         const element = document.getElementById(target);
         if (element) {
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Active Section
     const activeSection = sessionStorage.getItem('activeSection');
     if (activeSection) {
         const element = document.getElementById(activeSection);

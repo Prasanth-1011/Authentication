@@ -157,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     loginMessage.textContent = "Message";
                     loginMessage.style.color = "transparent";
                     window.location.href = "./Dashboard.html";
+                    localStorage.setAttribute("userLogin", "true");
                 }, 1500);
             }, 1500);
         }
